@@ -1,0 +1,123 @@
+.order-form {
+  padding: 40px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.order-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 12px;
+}
+
+.order-form__label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 12px;
+}
+
+.order-form__field:focus ~ .order-form__image {
+  fill: var(--accent-color-main);
+}
+
+.order-form__field:focus {
+  border-color: var(--accent-color-main);
+  outline: transparent;
+  fill: #2196f3;
+}
+
+.order-form__label--margin {
+  margin-bottom: 20px;
+}
+
+.order-form__image {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  width: 18px;
+  height: 18px;
+  fill: var(--secondary-text-color);
+
+  transition: fill 250ms var(--cubic-bezier);
+}
+
+.order-form__field {
+  width: 100%;
+  margin-top: 4px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 42px;
+
+  transition: border 250ms var(--cubic-bezier);
+}
+
+.order-form__textarea {
+  resize: none;
+  height: 120px;
+
+  padding: 12px 16px;
+}
+
+.order-form__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
+}
+
+/* ЧЕКБОКС!!! */
+
+.order-form__policy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 13px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.order-form__policy::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 5px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000;
+  border-radius: 2px;
+
+  transition: all 250ms var(--cubic-bezier);
+}
+
+.order-form__checkbox:checked + .order-form__policy::before {
+  background-color: var(--accent-color-main);
+  background-image: url(../images/modal/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+.order-form__link {
+  color: var(--accent-color-main);
+  text-decoration: underline;
+}
+
+.order-form__button--centered {
+  display: block;
+  margin: 0 auto;
+}
