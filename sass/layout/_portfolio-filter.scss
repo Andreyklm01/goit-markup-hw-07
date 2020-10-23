@@ -1,0 +1,26 @@
+.portfolio {
+  padding: 94px 0px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  background: var(--background-secondary-color);
+  border-radius: 4px;
+
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  background-color: var(--background-secondary-color);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color-main);
+  color: var(--additional-color);
+}

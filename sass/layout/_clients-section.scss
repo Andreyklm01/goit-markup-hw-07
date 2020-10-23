@@ -1,0 +1,33 @@
+.clients {
+  padding: 94px 0;
+}
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__logo svg {
+  width: 89px;
+  height: 52px;
+}
+
+.clients__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--social-links-color);
+  border-radius: 4px;
+  fill: var(--social-links-color);
+
+  transition: border-color 250ms var(--cubic-bezier),
+    fill 250ms var(--cubic-bezier);
+}
+
+.clients__logo:hover,
+.clients__logo:focus {
+  border-color: var(--accent-color-main);
+  fill: var(--accent-color-main);
+}

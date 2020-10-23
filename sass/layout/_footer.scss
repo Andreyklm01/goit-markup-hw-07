@@ -1,0 +1,122 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--background-main-color);
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.logo-title.logo-footer {
+  color: var(--additional-color);
+}
+
+.logo-footer-margin {
+  margin-bottom: 20px;
+}
+
+.address-container {
+  margin-right: 70px;
+}
+
+.address-list {
+  color: var(--additional-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.address-item {
+  margin-top: 9px;
+  color: var(--address-list-color);
+}
+
+.social-links__title {
+  display: block;
+
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--additional-color);
+}
+
+.social-links__list_footer svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links__list_footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 0 auto;
+}
+
+.social-links__icon_footer {
+  width: 44px;
+  height: 44px;
+
+  fill: var(--additional-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
+}
+
+.social-links__icon_footer:hover,
+.social-links__icon_footer:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color-main);
+}
+.social-links__item_margin:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subscribe__form {
+  margin-left: auto;
+}
+
+.subscribe__form-field {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0px 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--background-main-color);
+  color: #ececec;
+}
+
+.subscribe__form--position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.send-button {
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  margin-left: 12px;
+}
+.subscribe__icon--send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: var(--additional-color);
+}

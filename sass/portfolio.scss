@@ -1,4 +1,4 @@
-// ===MAIN PAGE===
+//  ====PORTFOLIO PAGE====
 // UTILS
 
 @import "./utils/variables";
@@ -17,9 +17,6 @@
 
 // LAYOUT
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/features-section";
-@import "./layout/activity-section";
-@import "./layout/team-section";
-@import "./layout/clients-section";
+@import "./layout/portfolio-filter";
+@import "./layout/portfolio-projects";
 @import "./layout/footer";
