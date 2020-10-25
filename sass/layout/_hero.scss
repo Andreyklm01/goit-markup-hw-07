@@ -8,18 +8,18 @@
     url("../images/hero-backgrond.jpg");
 
   text-align: center;
-}
 
-.hero-title {
-  display: block;
-  max-width: 696px;
-  margin: 0 auto 30px auto;
-  padding: 0 50px;
+  &-title {
+    display: block;
+    max-width: 696px;
+    margin: 0 auto 30px auto;
+    padding: 0 50px;
 
-  color: $additional-color;
+    color: $additional-color;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+  }
 }

@@ -8,10 +8,13 @@
 @import "./base/modern-normalize";
 @import "./base/common";
 @import "./base/container";
-@import "./base/button";
 
 // COMPONENTS
 @import "./components/section-title";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/current-page";
+@import "./components/social-links";
 @import "./components/modal";
 @import "./components/modal-form";
 
