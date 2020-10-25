@@ -1,6 +1,6 @@
 .footer {
   padding: 60px 0;
-  background-color: var(--background-main-color);
+  background-color: $background-main-color;
 }
 .footer-container {
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .logo-title.logo-footer {
-  color: var(--additional-color);
+  color: $additional-color;
 }
 
 .logo-footer-margin {
@@ -21,7 +21,7 @@
 }
 
 .address-list {
-  color: var(--additional-color);
+  color: $additional-color;
 
   font-style: normal;
   font-size: 14px;
@@ -30,7 +30,7 @@
 }
 .address-item {
   margin-top: 9px;
-  color: var(--address-list-color);
+  color: $address-list-color;
 }
 
 .social-links__title {
@@ -43,7 +43,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--additional-color);
+  color: $additional-color;
 }
 
 .social-links__list_footer svg {
@@ -62,7 +62,7 @@
   width: 44px;
   height: 44px;
 
-  fill: var(--additional-color);
+  fill: $additional-color;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
@@ -70,14 +70,13 @@
   justify-content: center;
   align-items: center;
 
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
 }
 
 .social-links__icon_footer:hover,
 .social-links__icon_footer:focus {
   border-radius: 50%;
-  background-color: var(--accent-color-main);
+  background-color: $accent-color-main;
 }
 .social-links__item_margin:not(:last-child) {
   margin-right: 10px;
@@ -94,7 +93,7 @@
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: var(--background-main-color);
+  background-color: $background-main-color;
   color: #ececec;
 }
 
@@ -118,5 +117,5 @@
   height: 24px;
   margin-left: 10px;
 
-  fill: var(--additional-color);
+  fill: $additional-color;
 }

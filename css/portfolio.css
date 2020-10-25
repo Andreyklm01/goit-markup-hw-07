@@ -1,17 +1,4 @@
 @charset "UTF-8";
-:root {
-  --main-text-color: #757575;
-  --secondary-text-color: #212121;
-  --accent-color-main: #2196f3;
-  --additional-color: #fff;
-  --background-main-color: #2f303a;
-  --background-secondary-color: #f5f4fa;
-  --border-color: #ececec;
-  --address-list-color: rgba(255, 255, 255, 0.6);
-  --social-links-color: #afb1b8;
-  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -303,8 +290,8 @@ summary {
 body {
   max-width: 1600px;
   margin: 0 auto;
-  color: var(--main-text-color);
-  background-color: var(--additional-color);
+  color: #757575;
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -314,7 +301,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--secondary-text-color);
+  color: #212121;
 }
 
 ul {
@@ -351,8 +338,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-  color: var(--additional-color);
-  background-color: var(--accent-color-main);
+  color: #fff;
+  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -376,7 +363,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
-  transition: all 500ms var(--cubic-bezier);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -393,7 +380,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
-  background-color: var(--additional-color);
+  background-color: #fff;
   transition: transform 250ms linear;
 }
 
@@ -418,12 +405,12 @@ img {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms var(--cubic-bezier);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn-icon:hover,
 .close-btn-icon:focus {
-  fill: var(--accent-color-main);
+  fill: #2196f3;
 }
 
 .order-form {
@@ -431,7 +418,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--main-text-color);
+  color: #757575;
 }
 
 .order-form__title {
@@ -440,7 +427,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #212121;
   margin-bottom: 12px;
 }
 
@@ -451,11 +438,11 @@ img {
 }
 
 .order-form__field:focus ~ .order-form__image {
-  fill: var(--accent-color-main);
+  fill: #2196f3;
 }
 
 .order-form__field:focus {
-  border-color: var(--accent-color-main);
+  border-color: #2196f3;
   outline: transparent;
   fill: #2196f3;
 }
@@ -470,8 +457,8 @@ img {
   bottom: 11px;
   width: 18px;
   height: 18px;
-  fill: var(--secondary-text-color);
-  transition: fill 250ms var(--cubic-bezier);
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form__field {
@@ -481,7 +468,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: border 250ms var(--cubic-bezier);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form__textarea {
@@ -515,11 +502,11 @@ img {
   height: 16px;
   border: 2px solid #000;
   border-radius: 2px;
-  transition: all 250ms var(--cubic-bezier);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form__checkbox:checked + .order-form__policy::before {
-  background-color: var(--accent-color-main);
+  background-color: #2196f3;
   background-image: url(../images/modal/vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -527,7 +514,7 @@ img {
 }
 
 .order-form__link {
-  color: var(--accent-color-main);
+  color: #2196f3;
   text-decoration: underline;
 }
 
@@ -537,8 +524,8 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-color);
-  background-color: var(--additional-color);
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
 }
 
 .navigation-contacts {
@@ -577,9 +564,9 @@ img {
 .navbar-link {
   display: block;
   position: relative;
-  color: var(--secondary-text-color);
+  color: #212121;
   padding: 29px 0;
-  transition: color 250ms var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-item {
@@ -594,7 +581,7 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color-main);
+  background-color: #2196f3;
 }
 
 .logo-title-style,
@@ -602,7 +589,7 @@ img {
 .navbar-link:focus,
 .contacts:hover,
 .contacts:focus {
-  color: var(--accent-color-main);
+  color: #2196f3;
 }
 
 .contacts {
@@ -610,7 +597,7 @@ img {
   align-items: center;
   fill: currentColor;
   padding: 20px 0;
-  transition: color 250ms var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
@@ -620,13 +607,13 @@ img {
 }
 
 .header-contacts-item {
-  transition: fill 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-item:hover,
 .header-contacts-item:focus {
-  color: var(--accent-color-main);
-  fill: var(--accent-color-main);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .portfolio {
@@ -635,22 +622,22 @@ img {
 
 .filter-btn {
   padding: 6px 22px;
-  background: var(--background-secondary-color);
+  background: #f5f4fa;
   border-radius: 4px;
   font-size: 16px;
-  color: var(--secondary-text-color);
-  background-color: var(--background-secondary-color);
+  color: #212121;
+  background-color: #f5f4fa;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  background-color: var(--accent-color-main);
-  color: var(--additional-color);
+  background-color: #2196f3;
+  color: #fff;
 }
 
 /* PROJECTS */
@@ -691,7 +678,7 @@ img {
   max-width: 370px;
   margin-bottom: 30px;
   margin-right: 30px;
-  background-color: var(--additional-color);
+  background-color: #fff;
 }
 
 .project__text_border {
@@ -736,9 +723,9 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-  color: var(--additional-color);
+  color: #fff;
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic-bezier) 100ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
 .project-item:hover .project-overlay {
@@ -748,7 +735,7 @@ img {
 
 .footer {
   padding: 60px 0;
-  background-color: var(--background-main-color);
+  background-color: #2f303a;
 }
 
 .footer-container {
@@ -758,7 +745,7 @@ img {
 }
 
 .logo-title.logo-footer {
-  color: var(--additional-color);
+  color: #fff;
 }
 
 .logo-footer-margin {
@@ -770,7 +757,7 @@ img {
 }
 
 .address-list {
-  color: var(--additional-color);
+  color: #fff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.5;
@@ -779,7 +766,7 @@ img {
 
 .address-item {
   margin-top: 9px;
-  color: var(--address-list-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .social-links__title {
@@ -790,7 +777,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--additional-color);
+  color: #fff;
 }
 
 .social-links__list_footer svg {
@@ -808,19 +795,19 @@ img {
 .social-links__icon_footer {
   width: 44px;
   height: 44px;
-  fill: var(--additional-color);
+  fill: #fff;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links__icon_footer:hover,
 .social-links__icon_footer:focus {
   border-radius: 50%;
-  background-color: var(--accent-color-main);
+  background-color: #2196f3;
 }
 
 .social-links__item_margin:not(:last-child) {
@@ -837,7 +824,7 @@ img {
   padding: 15px 0px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: var(--background-main-color);
+  background-color: #2f303a;
   color: #ececec;
 }
 
@@ -859,6 +846,6 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  fill: var(--additional-color);
+  fill: #fff;
 }
 /*# sourceMappingURL=portfolio.css.map */

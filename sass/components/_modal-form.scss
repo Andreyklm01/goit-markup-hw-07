@@ -4,7 +4,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .order-form__title {
@@ -13,7 +13,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 
   margin-bottom: 12px;
 }
@@ -26,11 +26,11 @@
 }
 
 .order-form__field:focus ~ .order-form__image {
-  fill: var(--accent-color-main);
+  fill: $accent-color-main;
 }
 
 .order-form__field:focus {
-  border-color: var(--accent-color-main);
+  border-color: $accent-color-main;
   outline: transparent;
   fill: #2196f3;
 }
@@ -46,9 +46,9 @@
 
   width: 18px;
   height: 18px;
-  fill: var(--secondary-text-color);
+  fill: $secondary-text-color;
 
-  transition: fill 250ms var(--cubic-bezier);
+  transition: fill 250ms $cubic-bezier;
 }
 
 .order-form__field {
@@ -60,7 +60,7 @@
 
   padding-left: 42px;
 
-  transition: border 250ms var(--cubic-bezier);
+  transition: border 250ms $cubic-bezier;
 }
 
 .order-form__textarea {
@@ -101,11 +101,11 @@
   border: 2px solid #000;
   border-radius: 2px;
 
-  transition: all 250ms var(--cubic-bezier);
+  transition: all 250ms $cubic-bezier;
 }
 
 .order-form__checkbox:checked + .order-form__policy::before {
-  background-color: var(--accent-color-main);
+  background-color: $accent-color-main;
   background-image: url(../images/modal/vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@
 }
 
 .order-form__link {
-  color: var(--accent-color-main);
+  color: $accent-color-main;
   text-decoration: underline;
 }
 

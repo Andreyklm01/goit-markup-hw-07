@@ -8,7 +8,7 @@
   max-height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: var(--background-secondary-color);
+  background-color: $background-secondary-color;
 }
 .features-list {
   display: flex;
@@ -24,7 +24,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: var(--background-secondary-color);
+  background-color: $background-secondary-color;
   background-repeat: no-repeat;
   background-position: center;
 }
